@@ -32,7 +32,7 @@ public class NickStorage implements Parcelable {
     }
 
     public NickStorage(final String... choices) {
-        addAll(FluentIterable.of(choices));
+        addAll(FluentIterable.from(choices));
     }
 
     private void addAll(final FluentIterable<String> fluentIterable) {
