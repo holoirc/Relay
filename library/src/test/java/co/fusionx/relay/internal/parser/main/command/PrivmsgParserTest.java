@@ -9,7 +9,7 @@ import co.fusionx.relay.internal.base.RelayServer;
 import co.fusionx.relay.internal.base.TestUtils;
 import co.fusionx.relay.misc.RelayConfigurationProvider;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class PrivmsgParserTest {
 

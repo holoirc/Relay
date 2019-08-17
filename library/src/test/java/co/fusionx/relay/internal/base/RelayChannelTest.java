@@ -9,7 +9,7 @@ import co.fusionx.relay.base.Channel;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class RelayChannelTest {
 

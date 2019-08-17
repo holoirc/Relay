@@ -7,7 +7,7 @@ import org.robolectric.annotation.Config;
 
 import co.fusionx.relay.base.ChannelUser;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class RelayChannelUserTest {
 

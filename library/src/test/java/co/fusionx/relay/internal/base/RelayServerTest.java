@@ -10,7 +10,7 @@ import co.fusionx.relay.event.server.ServerEvent;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class RelayServerTest {
 

@@ -22,7 +22,7 @@ android {
 dependencies {
     compileOnly 'com.squareup.dagger:dagger-compiler:1.2.2'
 
-    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'org.apache.commons:commons-lang3:3.6'
     implementation 'com.google.guava:guava:28.0-android'
 
     implementation 'com.squareup.okio:okio:1.6.0'
@@ -42,5 +42,5 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.robolectric:robolectric:3.0'
-    testImplementation 'org.assertj:assertj-core:1.6.1'
+    testImplementation 'org.assertj:assertj-core:3.3.0'
 }

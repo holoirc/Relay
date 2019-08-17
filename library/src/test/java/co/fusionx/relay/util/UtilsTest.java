@@ -14,7 +14,7 @@ import java.util.List;
 import static co.fusionx.relay.util.Utils.parseAndStripColorsFromMessage;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class UtilsTest {
     private static final char IRC_BOLD = '\u0002';

@@ -32,7 +32,7 @@ public class ParseUtils {
             return stringParts;
         }
 
-        String trimmedInput = CharMatcher.WHITESPACE.trimFrom(input);
+        String trimmedInput = CharMatcher.whitespace().trimFrom(input);
         int pos = 0, end;
         while ((end = trimmedInput.indexOf(' ', pos)) >= 0) {
             stringParts.add(trimmedInput.substring(pos, end));

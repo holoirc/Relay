@@ -13,7 +13,7 @@ import static co.fusionx.relay.base.ServerConfiguration.Builder.CREATOR;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 
-@Config(emulateSdk = 18)
+@Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
 public class ServerConfigurationTest {
 

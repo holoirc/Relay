@@ -28,8 +28,10 @@ public class TestUtils {
 
     public static ServerConfiguration.Builder getFreenodeBuilderSasl() {
         final ServerConfiguration.Builder builder = getFreenodeBuilder();
+        builder.setPort(6697);
         builder.setSaslUsername("relay");
         builder.setSaslPassword("relay");
+        builder.setSsl(true);
         return builder;
     }
 
