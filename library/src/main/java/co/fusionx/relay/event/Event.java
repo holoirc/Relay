@@ -2,12 +2,13 @@ package co.fusionx.relay.event;
 
 import android.text.format.Time;
 
+import java.util.Date;
+
 public class Event {
 
-    public final Time timestamp;
+    public final Date timestamp;
 
     public Event() {
-        timestamp = new Time();
-        timestamp.setToNow();
+        timestamp = new Date();
     }
 }

@@ -21,6 +21,8 @@ import co.fusionx.relay.event.server.ServerEvent;
  */
 public abstract class LoggingManager {
 
+    private static  final SimpleDateFormat sTimeFormat = new SimpleDateFormat("HH:mm:ss");
+
     private static final SimpleDateFormat sStaticFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     private final LoggingPreferences mLoggingPreferences;
@@ -181,7 +183,7 @@ public abstract class LoggingManager {
         public void run() {
             final String path = getServerPath(mServer);
             final String line = mLoggingPreferences.shouldLogTimestamps()
-                    ? String.format("%s: %s", mEvent.timestamp.format("%H:%M:%S"), mLogString)
+                    ? String.format("%s: %s", sTimeFormat.format(mEvent.timestamp), mLogString)
                     : mLogString;
             final File file = new File(String.format("%s/%s", path, mDirectory),
                     String.format("%s.txt", sStaticFormat.format(new Date())));
